@@ -865,7 +865,7 @@ html body .works {
 }
 
 html body .works .logo-list {
-  width: 80%;
+  width: 84%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -903,10 +903,11 @@ html body .works .logo-list {
 html body .works .logo-list .logo-item {
   background-color: #EFEFEF;
   border-radius: 50%;
-  width: 17%;
-  height: 14.1vw;
+  width: 17.6%;
+  height: 15vw;
   text-align: center;
   position: relative;
+  cursor: pointer;
   opacity: 0;
   -webkit-transform: translate(0, 50px);
           transform: translate(0, 50px);
@@ -961,14 +962,14 @@ html body .works .logo-list .logo-item img {
   -webkit-transform: translateY(-50%) translateX(-50%);
           transform: translateY(-50%) translateX(-50%);
   /* 要素自体の半分、上と左にずらす */
-  width: 50%;
+  width: 45%;
 }
 
 html body .works .logo-list .logo-item p {
   font-size: 1.3vw;
   position: absolute;
   /* 位置指定 */
-  top: 75%;
+  top: 70%;
   /* 親要素の半分下にずらす */
   left: 50%;
   /* 親要素の半分右にずらす */
@@ -1001,6 +1002,11 @@ html body .works .logo-list .logo-item.active {
           transform: scale(1);
 }
 
+html body .works .logo-list .logo-item.is-active {
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
 html body .works .logo-list .logo-item:nth-child(2) {
   background-color: #4D391B;
 }
@@ -1013,6 +1019,7 @@ html body .works .title-part {
   text-align: center;
   margin-bottom: 120px;
   margin-top: 70px;
+  display: none;
   /*h2*/
 }
 
@@ -1048,7 +1055,7 @@ html body .works .title-part h2 {
 
 html body .works .title-part h2 .sub-h2 {
   font-size: 33px;
-  font-weight: normal;
+  font-weight: bold;
   font-family: 'Noto Sans JP', sans-serif;
   position: relative;
   display: inline-block;
@@ -1125,6 +1132,10 @@ html body .works .title-part p.active {
   opacity: 1;
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
+}
+
+html body .works .title-part.is-show {
+  display: block;
 }
 
 html body .works .gallery {
@@ -1571,7 +1582,7 @@ html body .price table .about-price .price-number {
 html body .price table .about-price .price-number .sub-price {
   font-size: 1.7vw;
   /*24*/
-  font-weight: normal;
+  font-weight: bold;
   letter-spacing: 0.075em;
 }
 
@@ -1700,7 +1711,7 @@ html body .note-responsive {
 }
 
 html body .footer {
-  background-image: url(../img/footer-background.png);
+  background-image: url(../img/bottom-background.png);
   background-size: cover;
   position: relative;
   padding-bottom: 90px;
@@ -1822,7 +1833,7 @@ html body .footer-inner .footer-nav ul li:hover {
 
 html body .footer-inner .footer-nav ul .f-nav-privacy {
   font-size: 20px;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 @media (max-width: 1024px) {
