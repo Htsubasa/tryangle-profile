@@ -1396,7 +1396,7 @@ table{
  
     .sub-price{
       font-size: 1.7vw;/*24*/
-      font-weight: normal;
+      font-weight: bold;
       letter-spacing: 0.075em;
 
       @include pc{
@@ -1517,24 +1517,8 @@ table.active{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .footer{
-    background-image: url(../img/footer-background.png);
+  background-image: url(../img/bottom-background.png);
     background-size: cover;
     position: relative;
     padding-bottom: 90px;
@@ -1630,9 +1614,10 @@ table.active{
         transition: 1s;
       }
   
-      .f-nav-privacy{
+      .f-nav-privacy{  background-image: url(../img/bottom-background.png);
+
         font-size: 20px;
-        font-weight: normal;
+        font-weight: bold;
   
         @include pc{
           font-size: 0.9em;
